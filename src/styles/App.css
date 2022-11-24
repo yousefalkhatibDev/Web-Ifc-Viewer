@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#viewer-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(244, 244, 244);
+    border-right: 2px solid rgb(204, 204, 204);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #1a1a1a;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.sidenav a:hover {
+    color: #808080;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#tips-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    margin-right: 10px;
+}
+
+#viewer-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
